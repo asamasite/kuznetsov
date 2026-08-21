@@ -49,12 +49,35 @@ document.querySelector('.review-next').addEventListener('click', () => showRevie
 dots.forEach((dot, i) => dot.addEventListener('click', () => showReview(i)));
 
 const photos = [
-  ['assets/images/clinic-1.webp', 'Вход в стоматологию Б. В. Кузнецова'],
+  ['assets/images/room-1.webp', 'Стоматологический кабинет'],
   ['assets/images/clinic-3.webp', 'Коридор и кабинет № 221'],
-  ['assets/images/clinic-4.webp', 'Здание стоматологии и вход со двора'],
-  ['assets/images/clinic-5.webp', 'Фасад здания со стороны улицы'],
-  ['assets/images/clinic-6.webp', 'Здание стоматологии летом']
+  ['assets/images/clinic-1.webp', 'Вход в здание'],
+  ['assets/images/clinic-6.webp', 'Здание стоматологии летом'],
+  ['assets/images/clinic-4.webp', 'Вход со стороны двора']
 ];
+const track = document.querySelector('.gallery-track');
+if (track) {
+  const cards = [...track.querySelectorAll('.photo-card')];
+  const counter = document.querySelector('.gallery-counter');
+  const step = () => cards[0].getBoundingClientRect().width + 16;
+  const current = () => Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
+  const updateCounter = () => { counter.textContent = `${current() + 1} / ${cards.length}`; };
+  const calm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function slide(direction) {
+    track.scrollBy({ left: direction * step(), behavior: calm.matches ? 'auto' : 'smooth' });
+    setTimeout(updateCounter, 450);
+  }
+  document.querySelector('.gallery-prev').addEventListener('click', () => slide(-1));
+  document.querySelector('.gallery-next').addEventListener('click', () => slide(1));
+  track.addEventListener('scroll', updateCounter, { passive: true });
+  track.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+    event.preventDefault();
+    slide(event.key === 'ArrowLeft' ? -1 : 1);
+  });
+  updateCounter();
+}
+
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = lightbox.querySelector('img');
 const lightboxCaption = lightbox.querySelector('figcaption');

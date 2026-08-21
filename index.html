@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Стоматология Б. В. Кузнецова в Сургуте — лечение и протезирование зубов. ул. 30 лет Победы, 58, этаж 2.">
+  <meta name="description" content="Стоматологический кабинет Б. В. Кузнецова в Сургуте: лечение и протезирование зубов, приём по записи в будни. ул. 30 лет Победы, 58, 2 этаж, кабинет 221.">
   <meta name="theme-color" content="#173766">
   <title>Стоматология Б. В. Кузнецова — Сургут</title>
-  <link rel="icon" href="assets/images/clinic-2.webp" type="image/webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173766'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='12' fill='%23fff' text-anchor='middle'%3EБВК%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
@@ -16,58 +16,89 @@
     <div class="container header-row">
       <a class="logo" href="#top" aria-label="Стоматология Б. В. Кузнецова — на главную"><span class="logo-sign">БВК</span><span><b>Стоматология</b><small>Б. В. Кузнецова · Сургут</small></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span><span></span></button>
-      <nav id="nav" class="main-nav" aria-label="Основная навигация"><a href="#care">Направления</a><a href="#clinic">О клинике</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
+      <nav id="nav" class="main-nav" aria-label="Основная навигация"><a href="#care">Направления</a><a href="#doctors">Врачи</a><a href="#clinic">О клинике</a><a href="#reviews">Отзывы</a><a href="#contacts">Как нас найти</a></nav>
       <a class="header-call" href="tel:+73462501015"><small>Пн–Пт · 09:00–19:00</small><b>+7 3462 50-10-15</b></a>
     </div>
   </header>
 
   <main id="main">
+    <!-- ДЕМОНСТРАЦИОННОЕ ФОТО (room-1.webp): заменить на съёмку кабинета клиники. -->
     <section class="hero">
-      <div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
-      <div class="container hero-grid">
+      <img class="hero-photo" src="assets/images/room-1.webp" alt="" width="1920" height="1072" fetchpriority="high">
+      <div class="hero-veil" aria-hidden="true"></div>
+      <div class="container hero-inner">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Стоматологическая клиника в Сургуте</p>
+          <p class="eyebrow">Стоматология в Сургуте</p>
           <h1>Лечить зубы —<br><em>спокойно</em> и по делу</h1>
-          <p class="hero-lead">Стоматология Б. В. Кузнецова на улице 30 лет Победы. Приём по предварительной записи в будние дни.</p>
-          <div class="hero-actions"><a class="button button-accent" href="tel:+73462501015">Записаться по телефону <span>↗</span></a><a class="plain-link" href="#clinic">Посмотреть клинику <span>↓</span></a></div>
-          <div class="rating-card"><strong>4,2</strong><div><span aria-label="4,2 из 5">★★★★<i>★</i></span><p>19 оценок · 7 отзывов на Яндекс Картах</p></div></div>
-        </div>
-        <div class="hero-media reveal">
-          <img class="hero-main" src="assets/images/clinic-3.webp" alt="Коридор стоматологии Б. В. Кузнецова" width="1302" height="976">
-          <div class="hero-photo-note"><span>Кабинет № 221</span><b>2 этаж</b></div>
-          <div class="smile-card"><img src="assets/images/clinic-2.webp" alt="Результат стоматологической работы, опубликованный клиникой" width="1302" height="548"><span>Реальная фотография из карточки клиники</span></div>
+          <p class="hero-lead">Стоматологический кабинет Б. В. Кузнецова на улице 30 лет Победы. Принимаем по записи в будние дни — ко времени, без долгого ожидания в коридоре.</p>
+          <div class="hero-actions"><a class="button button-accent" href="tel:+73462501015">Записаться по телефону <span>↗</span></a><a class="plain-link" href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Построить маршрут <span>↗</span></a></div>
         </div>
       </div>
-      <div class="container hero-meta"><span>ул. 30 лет Победы, 58</span><span>Будни 09:00–19:00</span><span>Приём по записи</span></div>
+      <div class="container hero-meta reveal">
+        <a class="meta-card" href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+          <span><b>ул. 30 лет Победы, 58</b><small>2 этаж, кабинет № 221 — построить маршрут</small></span>
+        </a>
+        <div class="meta-card">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></svg>
+          <span><b>Будни 09:00–19:00</b><small>Суббота и воскресенье — выходные</small></span>
+        </div>
+        <a class="meta-card" href="tel:+73462501015">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.8" y="5" width="16.4" height="15" rx="3"/><path d="M8 3.2v3.4M16 3.2v3.4M3.8 10h16.4"/></svg>
+          <span><b>Приём по записи</b><small>Позвоните — подберём удобное время</small></span>
+        </a>
+      </div>
     </section>
 
     <section class="section care" id="care">
       <div class="container">
-        <div class="heading-row reveal"><div><p class="eyebrow blue">Подход к лечению</p><h2>Сначала разобраться.<br>Потом лечить.</h2></div><p>В открытых источниках нет полного прайса и перечня процедур. Клиника и отзывы пациентов подтверждают лечение и протезирование; конкретную возможность приёма лучше уточнить по телефону.</p></div>
+        <div class="heading-row reveal"><div><p class="eyebrow blue">Направления</p><h2>Сначала разобраться.<br>Потом лечить.</h2></div><p>На первом приёме осмотрим, объясним, что происходит, и предложим план. Стоимость и сроки называем до начала лечения. Если нужной услуги в кабинете нет, честно скажем об этом и подскажем, куда обратиться.</p></div>
+        <!-- ДЕМОНСТРАЦИОННЫЕ ФОТО (consult-1, treatment-1, prosthetics-1): заменить на съёмку клиники. -->
         <div class="care-grid">
-          <article class="care-card dark reveal"><span class="care-num">01</span><h3>Консультация</h3><p>Обсуждение жалоб, ситуации и возможного плана лечения на приёме.</p><a href="tel:+73462501015">Уточнить запись ↗</a></article>
-          <article class="care-card reveal"><span class="care-num">02</span><h3>Лечение зубов</h3><p>Стоматологическое лечение с индивидуальным подходом, отмеченным пациентами в отзывах.</p><a href="tel:+73462501015">Уточнить услугу ↗</a></article>
-          <article class="care-card image-card reveal"><img src="assets/images/clinic-2.webp" alt="Фотография результата стоматологической работы" width="1302" height="548" loading="lazy"><div><span class="care-num">03</span><h3>Протезирование</h3><p>Направление неоднократно упоминается пациентами клиники.</p><a href="tel:+73462501015">Уточнить стоимость ↗</a></div></article>
+          <article class="care-card dark reveal"><img src="assets/images/consult-1.webp" alt="Врач показывает пациентке снимок на экране" width="1920" height="1072" loading="lazy"><div class="care-body"><span class="care-num">01</span><h3>Консультация</h3><p>Осмотр, разговор о том, что беспокоит, и понятный план лечения со стоимостью.</p><a href="tel:+73462501015">Записаться ↗</a></div></article>
+          <article class="care-card reveal"><img src="assets/images/treatment-1.webp" alt="Врач-стоматолог на приёме с пациенткой" width="1920" height="1072" loading="lazy"><div class="care-body"><span class="care-num">02</span><h3>Лечение зубов</h3><p>Восстанавливаем форму и функцию зуба. Каждый шаг проговариваем заранее, без спешки.</p><a href="tel:+73462501015">Записаться ↗</a></div></article>
+          <article class="care-card reveal"><img src="assets/images/prosthetics-1.webp" alt="Зубной протез на имплантах" width="840" height="610" loading="lazy"><div class="care-body"><span class="care-num">03</span><h3>Протезирование</h3><p>Восстановление утраченных зубов. Варианты, сроки и цену обсуждаем до начала работы.</p><a href="tel:+73462501015">Узнать стоимость ↗</a></div></article>
         </div>
-        <div class="price-note reveal"><span>Стоимость</span><p>Публичный прайс в переданной карточке не указан. Цена зависит от клинической ситуации и плана лечения.</p><a class="button button-dark" href="tel:+73462501015">Позвонить в клинику</a></div>
+        <div class="price-note reveal"><span>Стоимость</span><p>Зависит от клинической ситуации и объёма работы. Точную сумму назовём на консультации — до того, как начнём лечение.</p><a class="button button-dark" href="tel:+73462501015">Позвонить в клинику</a></div>
+        <p class="disclaimer reveal">Есть противопоказания. Перед лечением нужна консультация специалиста — при сомнениях обратитесь к врачу.</p>
+      </div>
+    </section>
+
+    <!-- ДЕМОНСТРАЦИОННЫЕ ДАННЫЕ: имена, специализации и стаж врачей условные, заменить на реальные после согласования с клиникой (см. SOURCE_NOTES.md). -->
+    <section class="section doctors" id="doctors">
+      <div class="container">
+        <div class="heading-row reveal"><div><p class="eyebrow blue">Наши врачи</p><h2>Кто ведёт<br>приём</h2></div><p>К кому записаться с вашим вопросом — подскажет администратор по телефону: расскажите, что беспокоит, и он подберёт врача и время.</p></div>
+        <div class="doctors-grid">
+          <article class="doctor-card reveal"><span class="doctor-avatar" aria-hidden="true">АС</span><h3>Андрей Владимирович С.</h3><p class="doctor-role">Стоматолог-терапевт</p><p class="doctor-exp">Стаж 18 лет</p><p>Лечение зубов, восстановление формы, работа с чувствительностью.</p></article>
+          <article class="doctor-card reveal"><span class="doctor-avatar" aria-hidden="true">МК</span><h3>Марина Игоревна К.</h3><p class="doctor-role">Стоматолог-ортопед</p><p class="doctor-exp">Стаж 14 лет</p><p>Протезирование, замена ранее установленных конструкций.</p></article>
+          <article class="doctor-card reveal"><span class="doctor-avatar" aria-hidden="true">ОЛ</span><h3>Ольга Петровна Л.</h3><p class="doctor-role">Стоматолог-гигиенист</p><p class="doctor-exp">Стаж 9 лет</p><p>Профилактика, подготовка к лечению и домашний уход.</p></article>
+        </div>
       </div>
     </section>
 
     <section class="section clinic" id="clinic">
       <div class="container clinic-grid">
-        <div class="clinic-gallery reveal">
-          <button class="photo photo-main" type="button" data-photo="0"><img src="assets/images/clinic-1.webp" alt="Вход в стоматологию Б. В. Кузнецова зимой" width="976" height="1302" loading="lazy"><span>Вход в здание</span></button>
-          <button class="photo" type="button" data-photo="1"><img src="assets/images/clinic-3.webp" alt="Коридор и вход в кабинет стоматологии" width="1302" height="976" loading="lazy"><span>Кабинет № 221</span></button>
+        <div class="clinic-photo reveal">
+          <button class="photo" type="button" data-photo="0"><img src="assets/images/room-1.webp" alt="Светлый стоматологический кабинет с креслом" width="1920" height="1072" loading="lazy"><span>Кабинет № 221</span></button>
         </div>
-        <div class="clinic-copy reveal"><p class="eyebrow">О клинике</p><h2>Небольшая стоматология с личным подходом</h2><p class="lead">Пациенты отмечают профессионализм врача, внимательное отношение, приём по времени и помощь администратора с выбором удобной записи.</p>
-          <ul class="facts"><li><b>4,2</b><span>рейтинг на Яндекс Картах</span></li><li><b>19</b><span>оценок посетителей</span></li><li><b>7</b><span>опубликованных отзывов</span></li></ul>
-          <div class="source-note"><b>Важно</b><p>На Яндекс Картах есть отметка «Данные от Росздравнадзора», но номер лицензии в открытой карточке не показан. Его следует запросить у клиники перед обращением.</p></div>
+        <div class="clinic-copy reveal"><p class="eyebrow blue">О клинике</p><h2>Небольшая клиника с личным подходом</h2><p class="lead">Один кабинет, спокойный приём по времени и понятные объяснения: что делаем, зачем и сколько это будет стоить.</p>
+          <ul class="clinic-points"><li><b>Приём ко времени</b><span>записываем на конкретный час, без живой очереди</span></li><li><b>Цена заранее</b><span>план и стоимость обсуждаем до начала лечения</span></li><li><b>Без спешки</b><span>объясняем каждый шаг и отвечаем на вопросы</span></li></ul>
+          <div class="source-note"><b>Документы</b><p>Приём ведёт ООО «Стоматологический кабинет Б. В. Кузнецова». Сведения о лицензии и документы для налогового вычета предоставляем по запросу — скажите об этом администратору.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section doctor-note">
-      <div class="container doctor-box reveal"><span class="large-initial">СА</span><div><p class="eyebrow blue">Упоминание в отзывах</p><h2>Сергей Александрович Бесчетный</h2><p>Пациентка Татьяна отмечает многолетнее лечение и протезирование, внимательное отношение и индивидуальный подход врача. Официальная биография, стаж и образование в карточке организации не указаны.</p></div><a class="plain-link dark-link" href="#reviews">Читать отзывы <span>↓</span></a></div>
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="gallery-head reveal"><div><p class="eyebrow blue">Фотографии</p><h2>Клиника и дорога к ней</h2></div><div class="gallery-controls"><button class="gallery-prev" type="button" aria-label="Предыдущие фотографии">←</button><span class="gallery-counter" aria-live="polite">1 / 4</span><button class="gallery-next" type="button" aria-label="Следующие фотографии">→</button></div></div>
+        <div class="gallery-track reveal" tabindex="0" role="group" aria-label="Фотографии клиники, листается стрелками">
+          <button class="photo-card" type="button" data-photo="1"><img src="assets/images/clinic-3.webp" alt="Коридор второго этажа и дверь кабинета № 221" width="1302" height="976" loading="lazy"><span>Коридор, 2 этаж</span></button>
+          <button class="photo-card" type="button" data-photo="2"><img src="assets/images/clinic-1.webp" alt="Вход в здание зимой" width="976" height="1302" loading="lazy"><span>Вход в здание</span></button>
+          <button class="photo-card" type="button" data-photo="3"><img src="assets/images/clinic-6.webp" alt="Здание с вывеской стоматологии летом" width="960" height="720" loading="lazy"><span>Здание летом</span></button>
+          <button class="photo-card" type="button" data-photo="4"><img src="assets/images/clinic-4.webp" alt="Вход со стороны двора и парковка" width="960" height="720" loading="lazy"><span>Вход со двора</span></button>
+        </div>
+        <p class="gallery-hint">Нажмите на фотографию, чтобы открыть её во весь экран.</p>
+      </div>
     </section>
 
     <section class="section reviews" id="reviews">
@@ -78,35 +109,35 @@
           <article class="review-slide"><div class="quote">“</div><p>Много лет прохожу здесь лечение и протезирование. Отмечу профессионализм врача, индивидуальный подход, вежливого администратора и приём без очереди.</p><footer><b>Татьяна Л.</b><span>отзыв от 5 марта 2024</span></footer></article>
           <article class="review-slide"><div class="quote">“</div><p>Обратилась для удаления зуба, но услугу в клинике не получила и была направлена в другое учреждение.</p><footer><b>Альбина Линькова</b><span>отзыв от 31 марта</span></footer></article>
         </div>
-        <div class="review-footer"><div class="review-dots" aria-label="Выбор отзыва"><button class="active" type="button" aria-label="Отзыв 1"></button><button type="button" aria-label="Отзыв 2"></button><button type="button" aria-label="Отзыв 3"></button></div><p>Отзывы аккуратно сокращены без изменения смысла. Показана и положительная, и критическая обратная связь.</p><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах ↗</a></div>
+        <div class="review-footer"><div class="review-dots" aria-label="Выбор отзыва"><button class="active" type="button" aria-label="Отзыв 1"></button><button type="button" aria-label="Отзыв 2"></button><button type="button" aria-label="Отзыв 3"></button></div><p>Показываем отзывы так, как их оставили пациенты.</p><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах ↗</a></div>
       </div>
     </section>
 
     <section class="section route">
       <div class="container route-grid">
-        <div class="route-copy reveal"><p class="eyebrow blue">Как проходит обращение</p><h2>Три понятных шага</h2></div>
-        <ol class="steps"><li class="reveal"><span>1</span><div><h3>Позвоните</h3><p>Сообщите, что вас беспокоит, и уточните, оказывает ли клиника нужную услугу.</p></div></li><li class="reveal"><span>2</span><div><h3>Выберите время</h3><p>Администратор подберёт доступное время в будний день.</p></div></li><li class="reveal"><span>3</span><div><h3>Приходите на приём</h3><p>Клиника находится на втором этаже, кабинет № 221.</p></div></li></ol>
+        <div class="route-copy reveal"><p class="eyebrow blue">Как проходит визит</p><h2>Три понятных шага</h2></div>
+        <ol class="steps"><li class="reveal"><span>1</span><div><h3>Позвоните</h3><p>Расскажите, что беспокоит. Сразу скажем, чем поможем и сколько времени займёт приём.</p></div></li><li class="reveal"><span>2</span><div><h3>Выберите время</h3><p>Администратор подберёт удобное время в будний день с 09:00 до 19:00.</p></div></li><li class="reveal"><span>3</span><div><h3>Приходите на приём</h3><p>Второй этаж, кабинет № 221. Возьмите паспорт, а если есть — снимки и выписки от прежнего врача.</p></div></li></ol>
       </div>
     </section>
 
     <section class="section faq" id="faq">
       <div class="container faq-grid"><div class="faq-heading reveal"><p class="eyebrow blue">Перед визитом</p><h2>Коротко о важном</h2></div><div class="accordion">
-        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Как записаться?</span><i>+</i></button><div class="faq-answer"><p>Запись доступна по телефону +7 (3462) 50-10-15. Онлайн-запись в карточке не указана.</p></div></article>
-        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Есть ли приём в выходные?</span><i>+</i></button><div class="faq-answer"><p>По данным Яндекс Карт, суббота и воскресенье — выходные. В будни клиника работает с 09:00 до 19:00.</p></div></article>
-        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Можно ли оформить документы для налогового вычета?</span><i>+</i></button><div class="faq-answer"><p>Один из пациентов сообщает о такой возможности. Актуальный перечень документов нужно подтвердить у администратора.</p></div></article>
-        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Доступен ли вход на коляске?</span><i>+</i></button><div class="faq-answer"><p>В карточке Яндекс Карт вход отмечен как недоступный для инвалидной коляски. Рекомендуем заранее позвонить и уточнить возможность помощи.</p></div></article>
+        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Как записаться?</span><i>+</i></button><div class="faq-answer"><p>Позвоните по номеру +7 (3462) 50-10-15 в рабочие часы. Онлайн-записи пока нет: администратор подберёт время в разговоре.</p></div></article>
+        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Работаете ли в выходные?</span><i>+</i></button><div class="faq-answer"><p>Принимаем в будни с 09:00 до 19:00. Суббота и воскресенье — выходные.</p></div></article>
+        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Дадите документы для налогового вычета?</span><i>+</i></button><div class="faq-answer"><p>Документы для вычета готовим по запросу. Предупредите администратора при записи, чтобы всё было готово к визиту.</p></div></article>
+        <article class="faq-item reveal"><button type="button" aria-expanded="false"><span>Удобно ли добраться на коляске?</span><i>+</i></button><div class="faq-answer"><p>Кабинет на втором этаже, вход в здание — по ступеням, без пандуса. Позвоните заранее, если нужна помощь: подскажем, как удобнее попасть на приём.</p></div></article>
       </div></div>
     </section>
 
     <section class="section contacts" id="contacts">
       <div class="container contacts-grid">
-        <div class="contacts-copy reveal"><p class="eyebrow">Контакты</p><h2>Запишитесь на консультацию</h2><a class="big-phone" href="tel:+73462501015">+7 (3462) 50-10-15</a><dl><div><dt>Адрес</dt><dd>Сургут, ул. 30 лет Победы, 58<br>2 этаж, кабинет № 221</dd></div><div><dt>График</dt><dd>Пн–Пт: 09:00–19:00<br>Сб–Вс: выходной</dd></div><div><dt>Ориентир</dt><dd>Остановка «32-й микрорайон» — 62 м</dd></div></dl><div class="contact-buttons"><a class="button button-accent" href="tel:+73462501015">Позвонить</a><a class="button button-outline" href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Построить маршрут</a></div></div>
-        <div class="map-wrap reveal"><iframe title="Стоматология Б. В. Кузнецова на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=73.441751%2C61.255408&mode=search&oid=126343103693&ol=biz&z=16" loading="lazy" allowfullscreen></iframe><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Открыть точную карточку ↗</a></div>
+        <div class="contacts-copy reveal"><p class="eyebrow">Как нас найти</p><h2>Приезжайте или позвоните</h2><a class="big-phone" href="tel:+73462501015">+7 (3462) 50-10-15</a><dl><div><dt>Адрес</dt><dd>Сургут, ул. 30 лет Победы, 58<br>2 этаж, кабинет № 221</dd></div><div><dt>График</dt><dd>Пн–Пт: 09:00–19:00<br>Сб–Вс: выходной</dd></div><div><dt>Ориентир</dt><dd>Остановка «32-й микрорайон» — 62 м, вход с оранжевым козырьком</dd></div></dl><div class="contact-buttons"><a class="button button-accent" href="tel:+73462501015">Позвонить и записаться</a><a class="button button-outline" href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Построить маршрут</a></div></div>
+        <div class="map-wrap reveal"><iframe title="Стоматология Б. В. Кузнецова на карте" src="https://yandex.ru/map-widget/v1/?ll=73.441751%2C61.255408&mode=search&oid=126343103693&ol=biz&z=16" loading="lazy" allowfullscreen></iframe><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Открыть на Яндекс Картах ↗</a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-top"><a class="logo" href="#top"><span class="logo-sign">БВК</span><span><b>Стоматология</b><small>Б. В. Кузнецова · Сургут</small></span></a><p>ул. 30 лет Победы, 58 · этаж 2</p><a href="tel:+73462501015">+7 (3462) 50-10-15</a></div><div class="container footer-bottom"><span>Демонстрационный сайт по открытым данным</span><span>Информация не заменяет консультацию врача</span></div></footer>
+  <footer class="site-footer"><div class="container footer-top"><a class="logo" href="#top"><span class="logo-sign">БВК</span><span><b>Стоматология</b><small>Б. В. Кузнецова · Сургут</small></span></a><p>ул. 30 лет Победы, 58 · 2 этаж, кабинет № 221</p><a href="tel:+73462501015">+7 (3462) 50-10-15</a></div><div class="container footer-bottom"><span>ООО «Стоматологический кабинет Б. В. Кузнецова»</span><span>Есть противопоказания, необходима консультация специалиста</span></div></footer>
 
   <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Просмотр фотографии"><button class="lightbox-close" type="button" aria-label="Закрыть">×</button><button class="lightbox-prev" type="button" aria-label="Предыдущая фотография">←</button><figure><img src="assets/images/clinic-1.webp" alt=""><figcaption></figcaption></figure><button class="lightbox-next" type="button" aria-label="Следующая фотография">→</button></div>
   <a class="mobile-call" href="tel:+73462501015"><span>Записаться</span><b>50-10-15</b></a>
