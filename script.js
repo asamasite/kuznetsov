@@ -49,7 +49,6 @@ document.querySelector('.review-next').addEventListener('click', () => showRevie
 dots.forEach((dot, i) => dot.addEventListener('click', () => showReview(i)));
 
 const photos = [
-  ['assets/images/room-1.webp', 'Стоматологический кабинет'],
   ['assets/images/clinic-3.webp', 'Коридор и кабинет № 221'],
   ['assets/images/clinic-1.webp', 'Вход в здание'],
   ['assets/images/clinic-6.webp', 'Здание стоматологии летом'],

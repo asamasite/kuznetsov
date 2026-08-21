@@ -22,9 +22,8 @@
   </header>
 
   <main id="main">
-    <!-- ДЕМОНСТРАЦИОННОЕ ФОТО (room-1.webp): заменить на съёмку кабинета клиники. -->
     <section class="hero">
-      <img class="hero-photo" src="assets/images/room-1.webp" alt="" width="1920" height="1072" fetchpriority="high">
+      <img class="hero-photo" src="assets/images/hero-1.webp" alt="" width="1672" height="941" fetchpriority="high">
       <div class="hero-veil" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-copy reveal">
@@ -77,13 +76,16 @@
     </section>
 
     <section class="section clinic" id="clinic">
-      <div class="container clinic-grid">
-        <div class="clinic-photo reveal">
-          <button class="photo" type="button" data-photo="0"><img src="assets/images/room-1.webp" alt="Светлый стоматологический кабинет с креслом" width="1920" height="1072" loading="lazy"><span>Кабинет № 221</span></button>
+      <div class="container">
+        <div class="heading-row reveal"><div><p class="eyebrow blue">О клинике</p><h2>Небольшая клиника<br>с личным подходом</h2></div><p>Один кабинет, спокойный приём по времени и понятные объяснения: что делаем, зачем и сколько это будет стоить.</p></div>
+        <div class="clinic-cards">
+          <article class="clinic-card reveal"><span class="care-num">01</span><h3>Приём ко времени</h3><p>Записываем на конкретный час — без живой очереди в коридоре.</p></article>
+          <article class="clinic-card reveal"><span class="care-num">02</span><h3>Цена заранее</h3><p>План лечения и стоимость обсуждаем до того, как начнём работу.</p></article>
+          <article class="clinic-card reveal"><span class="care-num">03</span><h3>Без спешки</h3><p>Объясняем каждый шаг и отвечаем на вопросы — столько, сколько нужно.</p></article>
         </div>
-        <div class="clinic-copy reveal"><p class="eyebrow blue">О клинике</p><h2>Небольшая клиника с личным подходом</h2><p class="lead">Один кабинет, спокойный приём по времени и понятные объяснения: что делаем, зачем и сколько это будет стоить.</p>
-          <ul class="clinic-points"><li><b>Приём ко времени</b><span>записываем на конкретный час, без живой очереди</span></li><li><b>Цена заранее</b><span>план и стоимость обсуждаем до начала лечения</span></li><li><b>Без спешки</b><span>объясняем каждый шаг и отвечаем на вопросы</span></li></ul>
-          <div class="source-note"><b>Документы</b><p>Приём ведёт ООО «Стоматологический кабинет Б. В. Кузнецова». Сведения о лицензии и документы для налогового вычета предоставляем по запросу — скажите об этом администратору.</p></div>
+        <div class="docs-band reveal">
+          <div><p class="eyebrow">Документы</p><p>Приём ведёт ООО «Стоматологический кабинет Б. В. Кузнецова». Сведения о лицензии и документы для налогового вычета предоставляем по запросу.</p></div>
+          <a class="button button-accent" href="tel:+73462501015">Спросить у администратора</a>
         </div>
       </div>
     </section>
@@ -92,10 +94,10 @@
       <div class="container">
         <div class="gallery-head reveal"><div><p class="eyebrow blue">Фотографии</p><h2>Клиника и дорога к ней</h2></div><div class="gallery-controls"><button class="gallery-prev" type="button" aria-label="Предыдущие фотографии">←</button><span class="gallery-counter" aria-live="polite">1 / 4</span><button class="gallery-next" type="button" aria-label="Следующие фотографии">→</button></div></div>
         <div class="gallery-track reveal" tabindex="0" role="group" aria-label="Фотографии клиники, листается стрелками">
-          <button class="photo-card" type="button" data-photo="1"><img src="assets/images/clinic-3.webp" alt="Коридор второго этажа и дверь кабинета № 221" width="1302" height="976" loading="lazy"><span>Коридор, 2 этаж</span></button>
-          <button class="photo-card" type="button" data-photo="2"><img src="assets/images/clinic-1.webp" alt="Вход в здание зимой" width="976" height="1302" loading="lazy"><span>Вход в здание</span></button>
-          <button class="photo-card" type="button" data-photo="3"><img src="assets/images/clinic-6.webp" alt="Здание с вывеской стоматологии летом" width="960" height="720" loading="lazy"><span>Здание летом</span></button>
-          <button class="photo-card" type="button" data-photo="4"><img src="assets/images/clinic-4.webp" alt="Вход со стороны двора и парковка" width="960" height="720" loading="lazy"><span>Вход со двора</span></button>
+          <button class="photo-card" type="button" data-photo="0"><img src="assets/images/clinic-3.webp" alt="Коридор второго этажа и дверь кабинета № 221" width="1302" height="976" loading="lazy"><span>Коридор, 2 этаж</span></button>
+          <button class="photo-card" type="button" data-photo="1"><img src="assets/images/clinic-1.webp" alt="Вход в здание зимой" width="976" height="1302" loading="lazy"><span>Вход в здание</span></button>
+          <button class="photo-card" type="button" data-photo="2"><img src="assets/images/clinic-6.webp" alt="Здание с вывеской стоматологии летом" width="960" height="720" loading="lazy"><span>Здание летом</span></button>
+          <button class="photo-card" type="button" data-photo="3"><img src="assets/images/clinic-4.webp" alt="Вход со стороны двора и парковка" width="960" height="720" loading="lazy"><span>Вход со двора</span></button>
         </div>
         <p class="gallery-hint">Нажмите на фотографию, чтобы открыть её во весь экран.</p>
       </div>
