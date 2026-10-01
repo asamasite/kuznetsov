@@ -85,3 +85,61 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') showPhoto(photoIndex - 1);
   if (event.key === 'ArrowRight') showPhoto(photoIndex + 1);
 });
+
+// Дополнительная динамика страницы в стиле демо-проекта.
+const preloader = document.querySelector('.preloader');
+const progress = document.querySelector('#scrollProgress');
+const hero = document.querySelector('.hero');
+const heroPhoto = document.querySelector('.hero-photo');
+
+window.addEventListener('load', () => {
+  document.body.classList.add('page-ready');
+  hero?.classList.add('ready');
+  window.setTimeout(() => preloader?.classList.add('done'), 420);
+});
+
+let progressTick = false;
+function updateMotion() {
+  const root = document.documentElement;
+  const max = root.scrollHeight - root.clientHeight;
+  if (progress) progress.style.transform = `scaleX(${max > 0 ? Math.min(root.scrollTop / max, 1) : 0})`;
+  if (heroPhoto && window.scrollY < window.innerHeight) {
+    heroPhoto.style.transform = `scale(1.04) translateY(${window.scrollY * .035}px)`;
+  }
+  progressTick = false;
+}
+window.addEventListener('scroll', () => {
+  if (!progressTick) { progressTick = true; requestAnimationFrame(updateMotion); }
+}, { passive: true });
+updateMotion();
+
+document.querySelectorAll('.reveal').forEach((element, index) => {
+  if (!element.classList.contains('rl') && !element.classList.contains('rr')) {
+    element.classList.add(index % 2 ? 'rr' : 'rl');
+  }
+  if (!element.classList.contains('d1') && index % 6) element.classList.add(`d${Math.min(index % 6, 5)}`);
+});
+
+// Перетаскивание горизонтальной галереи мышью, как в демо.
+document.querySelectorAll('.gallery-track').forEach(track => {
+  let dragging = false; let startX = 0; let startLeft = 0;
+  track.addEventListener('pointerdown', event => {
+    if (track.scrollWidth <= track.clientWidth) return;
+    dragging = true; startX = event.clientX; startLeft = track.scrollLeft; track.setPointerCapture(event.pointerId); track.classList.add('dragging');
+  });
+  track.addEventListener('pointermove', event => { if (dragging) track.scrollLeft = startLeft - (event.clientX - startX); });
+  const stop = () => { dragging = false; track.classList.remove('dragging'); };
+  track.addEventListener('pointerup', stop); track.addEventListener('pointercancel', stop); track.addEventListener('pointerleave', stop);
+});
+
+const stepsBlock = document.querySelector('.steps');
+if (stepsBlock) {
+  const stepObserver = new IntersectionObserver(entries => {
+    if (!entries[0].isIntersecting) return;
+    stepsBlock.querySelectorAll('li').forEach((step, index) => {
+      window.setTimeout(() => step.classList.add('step-active'), index * 180);
+    });
+    stepObserver.disconnect();
+  }, { threshold: .28 });
+  stepObserver.observe(stepsBlock);
+}
