@@ -1,23 +1,25 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" class="js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Стоматология Б. В. Кузнецова в Сургуте: лечение зубов, протезирование, консультация. Приём по записи в будни, ул. 30 лет Победы, 58, кабинет № 221.">
   <meta name="theme-color" content="#173766">
   <title>Стоматология Б. В. Кузнецова — Сургут</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173766'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='12' fill='%23fff' text-anchor='middle'%3EБВК%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173766'/%3E%3Cpath d='M16 4c-6 0-9 4-8 10 1 4 3 5 4 9 1 3 2 5 4 5s1-5 2-5 1 5 3 5 3-2 4-5c1-4 3-5 4-9 1-6-2-10-8-10Z' fill='none' stroke='%23ff8b67' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="preloader" aria-hidden="true"><div class="preloader-brand"><span class="preloader-tooth"><svg viewBox="0 0 96 112" role="img" aria-label="Зуб"><path d="M48 5C26 5 12 20 14 43c1.4 17 9.6 23.5 13 38.5C30.2 93 35 106 42 106c7 0 5.2-18 10-18s3 18 10 18c7 0 11.8-13 15-24.5C80.4 66.5 88.6 60 90 43 92 20 78 5 56 5Z"/><path d="M27 40c7-7 14-10 21-10s14 3 21 10"/></svg><i>+</i></span><strong>Стоматологическая клиника</strong><b>Кузнецова</b></div><span class="preloader-line"><i></i></span></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <a class="skip-link" href="#main">К содержанию</a>
   <header class="site-header" id="top">
     <div class="container header-row">
-      <a class="logo" href="#top" aria-label="Стоматология Б. В. Кузнецова — на главную"><span class="logo-sign">БВК</span><span><b>Стоматология</b><small>Б. В. Кузнецова · Сургут</small></span></a>
+      <a class="logo" href="#top" aria-label="Стоматологический кабинет Кузнецова — на главную"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 56" role="img"><path d="M24 3C13 3 6 11 7 22c.7 8 4.6 11.5 6.4 18.2 1.4 5.2 2.6 10.8 6 10.8 3 0 2.4-8.7 4.6-8.7s1.6 8.7 4.6 8.7c3.4 0 4.6-5.6 6-10.8C36.4 33.5 40.3 30 41 22 42 11 35 3 24 3Z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M14 20c3.2-3 6.5-4.5 10-4.5S30.8 17 34 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span><b>Стоматологический кабинет</b><small>Кузнецова · Сургут</small></span></a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span><span></span></button>
       <nav id="nav" class="main-nav" aria-label="Основная навигация"><a href="#care">Направления</a><a href="#clinic">О клинике</a><a href="#reviews">Отзывы</a><a href="#contacts">Как нас найти</a></nav>
-      <a class="header-call" href="tel:+73462501015"><small>Пн–Пт · 09:00–19:00</small><b>+7 3462 50-10-15</b><span>+7 922 412-04-04</span></a>
+      <div class="header-call"><small>Пн–Пт · 09:00–19:00</small><span class="header-phones"><a href="tel:+73462501015">+7 3462 50-10-15</a><a href="tel:+79224120404">+7 922 412-04-04</a></span></div>
     </div>
   </header>
 
@@ -41,7 +43,7 @@
         <div class="heading-row reveal"><div><p class="eyebrow blue">Направления</p><h2>Сначала разобраться.<br>Потом лечить.</h2></div><p>На первом приёме осмотрим, объясним, что происходит, и предложим план. Стоимость и сроки называем до начала лечения.</p></div>
         <!-- ДЕМОНСТРАЦИОННЫЕ ФОТО (consult-1, treatment-1, prosthetics-1): заменить на съёмку клиники. -->
         <div class="care-grid">
-          <article class="care-card dark reveal"><img src="assets/images/consult-1.webp" alt="Компьютерная томограмма челюсти на мониторе в кабинете" width="1536" height="1024" loading="lazy"><div class="care-body"><span class="care-num">01</span><h3>Консультация</h3><p>Консультация бесплатная: осмотр, разговор о том, что беспокоит, и понятный план лечения со стоимостью.</p><a href="tel:+73462501015">Записаться ↗</a></div></article>
+          <article class="care-card dark reveal"><img src="assets/images/consult-1.webp" alt="Компьютерная томограмма челюсти на мониторе в кабинете" width="1536" height="1024" loading="lazy"><div class="care-body"><span class="care-num">01</span><h3>Консультация</h3><p><strong class="free-consult">Бесплатная</strong> консультация: осмотр, разговор о том, что беспокоит, и понятный план лечения со стоимостью.</p><a href="tel:+73462501015">Записаться ↗</a></div></article>
           <article class="care-card reveal"><img src="assets/images/treatment-1.webp" alt="Модель зуба и стоматологические инструменты в кабинете" width="1536" height="1024" loading="lazy"><div class="care-body"><span class="care-num">02</span><h3>Лечение зубов</h3><p>Восстанавливаем форму и функцию зуба. Каждый шаг проговариваем заранее, без спешки.</p><a href="tel:+73462501015">Записаться ↗</a></div></article>
           <article class="care-card reveal"><img src="assets/images/prosthetics-1.webp" alt="Гипсовая модель челюсти с коронками" width="1536" height="1024" loading="lazy"><div class="care-body"><span class="care-num">03</span><h3>Протезирование</h3><p>Восстановление утраченных зубов. Варианты, сроки и цену обсуждаем до начала работы.</p><a href="tel:+73462501015">Узнать стоимость ↗</a></div></article>
         </div>
@@ -84,7 +86,7 @@
           <article class="review-slide"><div class="quote">“</div><p>Много лет прохожу здесь лечение и протезирование. Высокий профессионализм врача, внимательное отношение, вежливый администратор.</p><footer><b>Татьяна Л.</b><span>отзыв от 5 марта 2024</span></footer></article>
           <article class="review-slide"><div class="quote">“</div><p>Я не ожидал, что увижу свою улыбку — ту самую, что была. А мне её вернули.</p><footer><b>Максим Бабичев</b><span>отзыв от 12 июля 2024</span></footer></article>
         </div>
-        <div class="review-footer"><div class="review-dots" aria-label="Выбор отзыва"><button class="active" type="button" aria-label="Отзыв 1"></button><button type="button" aria-label="Отзыв 2"></button><button type="button" aria-label="Отзыв 3"></button></div><div class="review-links"><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах ↗</a><a href="https://2gis.ru/surgut/firm/5489290326837614" target="_blank" rel="noopener">Все отзывы и оценка в 2ГИС ↗</a></div></div>
+        <div class="review-footer"><div class="review-dots" aria-label="Выбор отзыва"><button class="active" type="button" aria-label="Отзыв 1"></button><button type="button" aria-label="Отзыв 2"></button><button type="button" aria-label="Отзыв 3"></button></div><div class="review-links"><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах ↗</a><a href="https://2gis.ru/surgut/firm/5489290326837614" target="_blank" rel="noopener">Все отзывы в 2ГИС ↗</a></div></div>
       </div>
     </section>
 
@@ -112,13 +114,13 @@
 
     <section class="section contacts" id="contacts">
       <div class="container contacts-grid">
-        <div class="contacts-copy reveal"><p class="eyebrow">Как нас найти</p><h2>Приезжайте или позвоните</h2><a class="big-phone" href="tel:+73462501015">+7 (3462) 50-10-15</a><a class="secondary-phone" href="tel:+79224120404">+7 (922) 412-04-04</a><dl><div><dt>Адрес</dt><dd>Сургут, ул. 30 лет Победы, 58<br>2 этаж, кабинет № 221</dd></div><div><dt>График</dt><dd>Пн–Пт: 09:00–19:00<br>Сб: 10:00–14:00<br>Вс: выходной</dd></div><div><dt>Ориентир</dt><dd>Остановка «32-й микрорайон». Вход с оранжевым козырьком (стоматология).</dd></div></dl><div class="contact-buttons"><a class="button button-accent" href="tel:+73462501015">Позвонить и записаться</a><a class="button button-outline" href="https://2gis.ru/surgut/firm/5489290326837614" target="_blank" rel="noopener">Построить маршрут в 2ГИС</a></div></div>
-        <div class="map-wrap reveal"><div class="map-panel"><p>Яндекс Карты</p><iframe title="Стоматология Б. В. Кузнецова на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?ll=73.441751%2C61.255408&mode=search&oid=126343103693&ol=biz&z=16" loading="lazy" allowfullscreen></iframe><a href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Открыть на Яндекс Картах ↗</a></div><div class="map-panel"><p>2ГИС — оценки и отзывы</p><iframe title="Стоматология Б. В. Кузнецова на карте 2ГИС" src="https://widgets.2gis.com/widget?options=%7B%22pos%22%3A%7B%22lat%22%3A61.255408%2C%22lon%22%3A73.441751%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22surgut%22%7D%2C%22org%22%3A%225489290326837614%22%7D&type=firmsonmap" loading="lazy" allowfullscreen></iframe><a href="https://2gis.ru/surgut/firm/5489290326837614" target="_blank" rel="noopener">Открыть карточку и отзывы в 2ГИС ↗</a></div></div>
+        <div class="contacts-copy reveal"><p class="eyebrow">Как нас найти</p><h2>Приезжайте или позвоните</h2><a class="big-phone" href="tel:+73462501015">+7 (3462) 50-10-15</a><a class="secondary-phone" href="tel:+79224120404">+7 (922) 412-04-04</a><dl><div><dt>Адрес</dt><dd>Сургут, ул. 30 лет Победы, 58<br>2 этаж, кабинет № 221</dd></div><div><dt>График</dt><dd>Пн–Пт: 09:00–19:00<br>Сб: 10:00–14:00<br>Вс: выходной</dd></div><div><dt>Ориентир</dt><dd>Остановка «32-й микрорайон». Вход с оранжевым козырьком (стоматология).</dd></div></dl><div class="contact-buttons"><a class="button button-accent" href="tel:+73462501015">Позвонить и записаться</a><a class="button button-outline" href="https://2gis.ru/surgut/firm/5489290326837614" target="_blank" rel="noopener">Построить маршрут в 2ГИС</a><a class="button button-outline" href="https://yandex.ru/maps/org/stomatologiya_b_v_kuznetsova/126343103693/" target="_blank" rel="noopener">Построить маршрут в Яндекс Картах</a></div></div>
+        <div class="map-wrap reveal"><div class="map-panel"><p>2ГИС — оценки и отзывы</p><iframe title="Стоматология Б. В. Кузнецова на карте 2ГИС" src="https://widgets.2gis.com/widget?options=%7B%22pos%22%3A%7B%22lat%22%3A61.255408%2C%22lon%22%3A73.441751%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22surgut%22%7D%2C%22org%22%3A%225489290326837614%22%7D&type=firmsonmap" loading="lazy" allowfullscreen></iframe><a href="https://2gis.ru/surgut/firm/5489290326837614" target="_blank" rel="noopener">Открыть карточку и отзывы в 2ГИС ↗</a></div></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-top"><a class="logo" href="#top"><span class="logo-sign">БВК</span><span><b>Стоматология</b><small>Б. В. Кузнецова · Сургут</small></span></a><p>ул. 30 лет Победы, 58 · 2 этаж, кабинет № 221</p><span><a href="tel:+73462501015">+7 (3462) 50-10-15</a><br><a href="tel:+79224120404">+7 (922) 412-04-04</a></span></div><div class="container footer-bottom"><span>ООО «Стоматологический кабинет Б. В. Кузнецова»</span><span>Есть противопоказания, необходима консультация специалиста</span></div></footer>
+  <footer class="site-footer"><div class="container footer-top"><a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 48 56" role="img"><path d="M24 3C13 3 6 11 7 22c.7 8 4.6 11.5 6.4 18.2 1.4 5.2 2.6 10.8 6 10.8 3 0 2.4-8.7 4.6-8.7s1.6 8.7 4.6 8.7c3.4 0 4.6-5.6 6-10.8C36.4 33.5 40.3 30 41 22 42 11 35 3 24 3Z" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M14 20c3.2-3 6.5-4.5 10-4.5S30.8 17 34 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span><b>Стоматологический кабинет</b><small>Кузнецова · Сургут</small></span></a><p>ул. 30 лет Победы, 58 · 2 этаж, кабинет № 221</p><span><a href="tel:+73462501015">+7 (3462) 50-10-15</a><br><a href="tel:+79224120404">+7 (922) 412-04-04</a></span></div><div class="container footer-bottom"><span>ООО «Стоматологический кабинет Б. В. Кузнецова»</span><span>Есть противопоказания, необходима консультация специалиста</span></div></footer>
 
   <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Просмотр фотографии"><button class="lightbox-close" type="button" aria-label="Закрыть">×</button><button class="lightbox-prev" type="button" aria-label="Предыдущая фотография">←</button><figure><img src="assets/images/gallery-1.webp" alt=""><figcaption></figcaption></figure><button class="lightbox-next" type="button" aria-label="Следующая фотография">→</button></div>
   <a class="mobile-call" href="tel:+73462501015"><span>Записаться</span><b>50-10-15</b></a>
